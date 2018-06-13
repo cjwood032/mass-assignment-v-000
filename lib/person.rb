@@ -1,6 +1,6 @@
 class Person
   attr_accessor :name, :birthday, :hair_color, :eye_color, :height, :weight, :handed, :complexion, :t_shirt_size, :wrist_size, :glove_size, :pant_length, :pant_width
-  def initialize(properties)
-    properties.each_entry{|x| x.send}
+  def initialize(properties=nil)
+    properties.each_entry{|x,y| x.send}
   end
 end
